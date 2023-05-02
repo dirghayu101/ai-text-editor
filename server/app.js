@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv");
+dotenv.config({ path: __dirname + "/config.env" });
 const cookieParser = require("cookie-parser");
 const errorMiddleware = require("./middleware/error");
 const cors = require("cors");

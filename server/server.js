@@ -1,8 +1,5 @@
 const app = require("./app");
-const dotenv = require("dotenv");
 const PORT = process.env.PORT || 3500;
-
-dotenv.config({ path: __dirname + "/config.env" });
 
 app.get("/", (req, res) => {
   res.status(200).send("<h1>The server is running successfully!</h1>");
