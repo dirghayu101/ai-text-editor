@@ -1,0 +1,25 @@
+#loginBtn {
+  background-color: rgb(37, 165, 37);
+}
+
+#loginBtn:hover {
+  background-color: rgb(37, 165, 37, 0.6);
+}
+
+.forgotPassword {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.656);
+  font-size: 0.95rem;
+}
+
+.forgotPassword:hover {
+  cursor: pointer;
+}
+
+.signUp {
+  text-align: center;
+  margin: 9px 0;
+}
+.signUp a {
+  color: rgb(62, 62, 202);
+}
