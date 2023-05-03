@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./components/utils/NotFound";
-import Signup from "./components/signup/Signup";
+import Signup from "./components/auth/Signup";
 
 function App() {
   return (

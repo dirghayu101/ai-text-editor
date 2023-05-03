@@ -1,0 +1,21 @@
+.logoHeader {
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.549);
+  width: 100vw;
+  padding: 7px;
+}
+
+.logoHeader > span {
+  font-size: 2.2rem;
+  font-family: "Dancing Script";
+  padding: 6px;
+  padding-top: 7px;
+  color: rgb(50, 160, 50);
+  font-weight: 700;
+  margin-top: 3px;
+  margin-left: 7px;
+}
+
+.logoHeader > span > span {
+  font-size: 2.4rem;
+}

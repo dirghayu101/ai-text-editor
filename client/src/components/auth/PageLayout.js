@@ -1,19 +1,18 @@
-import styles from "./Signup.module.css";
-import SignupForm from "./components/SignupForm";
+import styles from "./styles/Signup.module.css";
 import LogoHeader from "../utils/LogoHeader";
 
-const Signup = () => {
+const PageLayout = ({ Form, heading }) => {
   return (
     <>
       <LogoHeader />
       <div className={styles.background_container}>
         <div className={styles.formBox}>
-          <h1>Sign up</h1>
-          <SignupForm />
+          <h1>{heading}</h1>
+          <Form />
         </div>
       </div>
     </>
   );
 };
 
-export default Signup;
+export default PageLayout;
