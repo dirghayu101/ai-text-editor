@@ -1,4 +1,5 @@
 const app = require("./app");
+const connectDatabase = require("./db/connect");
 const PORT = process.env.PORT || 3500;
 
 app.get("/", (req, res) => {
@@ -14,6 +15,7 @@ process.on("uncaughtException", (err) => {
 
 const start = async () => {
   try {
+    await connectDatabase();
     app.listen(PORT, () => {
       console.log(`The server is listening on http://localhost:${PORT}`);
     });

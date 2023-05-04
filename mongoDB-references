@@ -1,0 +1,17 @@
+mongod --version --> To get the version of mongodb.
+brew list --versions mongodb-community --> List all versions of mongodb installed in your system.
+brew services list --> Shows the status of mongodb in your system.
+brew install mongodb-community@5.0 --> This will install a specific version of mongodb in your system.
+
+To start and stop the services use these:
+brew services start mongodb-community@6.0
+brew services stop mongodb-community@6.0
+
+mongosh -> This will open the shell where you can execute the commands and check your databases.
+
+Mongosh commands:
+
+1. db -> This will show all the db/collections in your system.
+2. show dbs -> Shows all the database you have
+3. use db -> This will create a new db with the name db.
+4.

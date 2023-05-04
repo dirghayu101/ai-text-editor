@@ -12,6 +12,7 @@ app.use(cookieParser());
 const generalRoutes = require("./routes/generalRoutes");
 
 app.use("/api", generalRoutes);
+// app.use("/auth");
 app.use(errorMiddleware);
 
 module.exports = app;
