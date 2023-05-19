@@ -10,9 +10,10 @@ app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 const generalRoutes = require("./routes/generalRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 app.use("/api", generalRoutes);
-// app.use("/auth");
+app.use("/auth", authRoutes);
 app.use(errorMiddleware);
 
 module.exports = app;

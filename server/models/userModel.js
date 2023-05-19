@@ -1,6 +1,5 @@
 //NOTE: GOAL I want as much modularization as possible and least coupling.
 const mongoose = require("mongoose");
-const validator = require("validator");
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -17,7 +16,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter your password."],
     minLength: [8, "Password should be greater than 8 characters"],
-    validate: [validator.isStrongPassword, "Input password is weak."],
     select: false,
   },
   createdAt: {
@@ -25,3 +23,5 @@ const userSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+module.exports = mongoose.model("User", userSchema);
