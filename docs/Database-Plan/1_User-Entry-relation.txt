@@ -1,0 +1,20 @@
+Some goals worth considering before setting up the database:
+1-> Atomicity should be taken into consideration. I will group small things.
+2-> Even the admin or whoever gets control over the database should not be able to read it. 
+
+So, there are two models in our Database as of now.
+
+One is the User model, and the second one is the Entry model.
+
+# Why are there two models? Why not just one model User with entry as its nested component?
+-> The reason for this is that it will created a huge unmanageable database. 
+-> I mean with so many nested things, it might get difficult to manage, that's why I am breaking it down into two.
+-> I want separation of concern.
+
+# How are the two models related?
+-> The user ID field will be used to link the two models.
+-> The user ID of the user and the entry will also have that userID which will be able to pick it up.
+
+# What about the second goal? That admin should not be able to read it.
+-> So the entry model will already contain entries in the encrypted format.
+-> We will add further security steps in the entry model.
